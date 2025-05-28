@@ -1,8 +1,3 @@
-# COSC 3P91 – Assignment 4
-
-**Authors:** Yuvraj Sehgal and Rohit Pillai  
-**Student IDs:** 6921795 and 6959308  
-**University:** Brock University, Canada  
 
 ## Overview
 
