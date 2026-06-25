@@ -293,34 +293,6 @@ Deep-dive documentation: [`docs/architecture.md`](docs/architecture.md) · [`doc
 
 ---
 
-## 🖼️ Screenshots
-
-> Add screenshots to an `assets/` folder at the repo root, then uncomment the lines below.
-
-<!-- Main Menu -->
-![Main Menu](assets/main-menu.png)
-
-<!-- Connect Dialog -->
-![Connect Dialog](assets/connect-dialog.png)
-
-<!-- Village Dashboard -->
-![Village Dashboard](assets/dashboard.png)
-
-<!-- Building Dialog -->
-![Building Dialog](assets/building-dialog.png)
-
-<!-- Combat Screen -->
-![Combat Screen](assets/combat.png)
-
-<!-- Server Terminal -->
-![Server Terminal](assets/server-terminal.png)
-
-| Main Menu | Village Dashboard | Combat |
-|:---:|:---:|:---:|
-| _Add `assets/main-menu.png`_ | _Add `assets/dashboard.png`_ | _Add `assets/combat.png`_ |
-
----
-
 ## 🚀 Future Improvements
 
 - [ ] Replace Java serialization with a **versioned JSON or Protobuf protocol**
