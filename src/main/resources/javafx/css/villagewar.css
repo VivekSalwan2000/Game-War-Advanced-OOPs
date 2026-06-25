@@ -1,0 +1,126 @@
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #1e1e2e;
+}
+
+.label {
+    -fx-text-fill: #cdd6f4;
+}
+
+.main-menu-root {
+    -fx-background-color: linear-gradient(to bottom, #1e1e2e, #313244);
+}
+
+.main-menu-panel {
+    -fx-background-color: rgba(49, 50, 68, 0.85);
+    -fx-background-radius: 12;
+    -fx-border-color: #45475a;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.title-label {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cba6f7;
+}
+
+.subtitle-label {
+    -fx-text-fill: #a6adc8;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #89b4fa;
+}
+
+.dialog-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dialog-root {
+    -fx-background-color: #313244;
+}
+
+.dashboard-header {
+    -fx-background-color: #313244;
+    -fx-border-color: #45475a;
+    -fx-border-width: 0 0 1 0;
+}
+
+.action-panel, .side-panel {
+    -fx-background-color: #282836;
+    -fx-min-width: 180;
+}
+
+.map-scroll {
+    -fx-background-color: #1e1e2e;
+}
+
+.status-bar-container {
+    -fx-background-color: #181825;
+    -fx-border-color: #45475a;
+    -fx-border-width: 1 0 0 0;
+}
+
+.status-bar {
+    -fx-text-fill: #a6adc8;
+}
+
+.button {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #cdd6f4;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16 8 16;
+}
+
+.button:hover {
+    -fx-background-color: #585b70;
+}
+
+.primary-button {
+    -fx-background-color: #89b4fa;
+    -fx-text-fill: #1e1e2e;
+    -fx-font-weight: bold;
+}
+
+.primary-button:hover {
+    -fx-background-color: #b4befe;
+}
+
+.entity-tile {
+    -fx-arc-width: 8;
+    -fx-arc-height: 8;
+    -fx-stroke: #cdd6f4;
+    -fx-stroke-width: 1;
+}
+
+.entity-icon {
+    -fx-font-size: 22px;
+}
+
+.entity-level {
+    -fx-font-size: 11px;
+    -fx-text-fill: #1e1e2e;
+    -fx-font-weight: bold;
+}
+
+.outcome-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.victory {
+    -fx-text-fill: #a6e3a1;
+}
+
+.defeat {
+    -fx-text-fill: #f38ba8;
+}
+
+.combat-root {
+    -fx-background-color: #313244;
+}

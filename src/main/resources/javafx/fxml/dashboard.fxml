@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.villagewar.ui.controller.DashboardController"
+            fx:id="root">
+
+    <top>
+        <VBox spacing="8" styleClass="dashboard-header">
+            <padding>
+                <Insets top="12" right="16" bottom="12" left="16"/>
+            </padding>
+            <Label text="Village Dashboard" styleClass="section-title"/>
+            <GridPane hgap="16" vgap="6">
+                <Label fx:id="levelLabel" text="Level: 0" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <Label fx:id="goldLabel" text="Gold: 0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label fx:id="ironLabel" text="Iron: 0" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+                <Label fx:id="lumberLabel" text="Wood: 0" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+                <Label fx:id="populationLabel" text="Population: 0 / 0" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <Label fx:id="buildingCountLabel" text="Buildings: 0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="armySizeLabel" text="Army: 0" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                <Label fx:id="foodLabel" text="Food: 0" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+                <Label fx:id="trophiesLabel" text="Trophies: 0" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            </GridPane>
+        </VBox>
+    </top>
+
+    <center>
+        <ScrollPane fx:id="mapScroll" fitToWidth="true" styleClass="map-scroll">
+            <FlowPane fx:id="buildingsPane" hgap="8" vgap="8"/>
+        </ScrollPane>
+    </center>
+
+    <right>
+        <VBox spacing="8" styleClass="side-panel">
+            <padding>
+                <Insets top="12" right="12" bottom="12" left="12"/>
+            </padding>
+            <Label text="Workers" styleClass="section-title"/>
+            <FlowPane fx:id="workersPane" hgap="6" vgap="6" prefWrapLength="160"/>
+            <Label text="Army" styleClass="section-title"/>
+            <FlowPane fx:id="armyPane" hgap="6" vgap="6" prefWrapLength="160"/>
+        </VBox>
+    </right>
+
+    <left>
+        <VBox spacing="8" styleClass="action-panel">
+            <padding>
+                <Insets top="12" right="12" bottom="12" left="12"/>
+            </padding>
+            <Button fx:id="createVillageButton" text="Create Village" maxWidth="Infinity"/>
+            <Button fx:id="refreshButton" text="Refresh" maxWidth="Infinity"/>
+            <Button fx:id="upgradeButton" text="Upgrade Village" maxWidth="Infinity"/>
+            <Separator/>
+            <Button fx:id="addBuildingButton" text="Add Building…" maxWidth="Infinity"/>
+            <Button fx:id="addWorkerButton" text="Recruit Worker…" maxWidth="Infinity"/>
+            <Separator/>
+            <Button fx:id="attackButton" text="Attack Village" maxWidth="Infinity" styleClass="primary-button"/>
+            <Button fx:id="defendButton" text="Defend Village" maxWidth="Infinity"/>
+            <Separator/>
+            <Button fx:id="disconnectButton" text="Disconnect" maxWidth="Infinity"/>
+        </VBox>
+    </left>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="status-bar-container">
+            <padding>
+                <Insets top="6" right="12" bottom="6" left="12"/>
+            </padding>
+            <ProgressIndicator fx:id="loadingIndicator" prefWidth="20" prefHeight="20"/>
+            <Label fx:id="statusBar" text="Ready" HBox.hgrow="ALWAYS"/>
+        </HBox>
+    </bottom>
+</BorderPane>

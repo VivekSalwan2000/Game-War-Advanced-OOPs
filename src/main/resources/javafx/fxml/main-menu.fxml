@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.villagewar.ui.controller.MainMenuController"
+            fx:id="root"
+            styleClass="main-menu-root">
+
+    <center>
+        <VBox alignment="CENTER" spacing="24" styleClass="main-menu-panel">
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+            <Label text="VillageWar" styleClass="title-label"/>
+            <Label text="Strategy village builder — JavaFX client" styleClass="subtitle-label"/>
+            <VBox spacing="12" alignment="CENTER" maxWidth="320">
+                <Button fx:id="startClientButton" text="Start Client" maxWidth="Infinity" styleClass="primary-button"/>
+                <Button fx:id="connectButton" text="Connect to Server" maxWidth="Infinity"/>
+                <Button fx:id="exitButton" text="Exit" maxWidth="Infinity"/>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

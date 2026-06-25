@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.villagewar.ui.controller.CombatController"
+            fx:id="root"
+            styleClass="combat-root">
+    <center>
+        <VBox spacing="12" alignment="CENTER">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <Label fx:id="battleTypeLabel" text="Battle" styleClass="section-title"/>
+            <Label fx:id="armyInfoLabel" text="Army info"/>
+            <Label fx:id="outcomeLabel" text="—" styleClass="outcome-label"/>
+            <Label text="Loot / Details"/>
+            <TextArea fx:id="lootArea" editable="false" prefRowCount="8" wrapText="true" maxWidth="460"/>
+            <ProgressIndicator fx:id="progressIndicator" prefWidth="28" prefHeight="28"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Button fx:id="fightButton" text="Fight" styleClass="primary-button" defaultButton="true"/>
+                <Button fx:id="closeButton" text="Close"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

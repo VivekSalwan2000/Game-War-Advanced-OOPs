@@ -1,0 +1,43 @@
+# ---- Build output ----
+target/
+out/
+build/
+bin/
+*.class
+
+# ---- Maven ----
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+dependency-reduced-pom.xml
+
+# ---- Gradle (in case of future use) ----
+.gradle/
+
+# ---- IDEs ----
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+# Eclipse
+.classpath
+.project
+.settings/
+# VS Code
+.vscode/
+# NetBeans
+nbproject/
+nbactions.xml
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+*~
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- Java tooling ----
+hs_err_pid*
+replay_pid*

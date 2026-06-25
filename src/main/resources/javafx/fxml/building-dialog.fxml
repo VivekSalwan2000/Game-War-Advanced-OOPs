@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.villagewar.ui.controller.BuildingDialogController"
+      fx:id="root"
+      spacing="12"
+      styleClass="dialog-root">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Add Building" styleClass="dialog-title"/>
+    <ComboBox fx:id="buildingTypeCombo" maxWidth="Infinity"/>
+    <ProgressIndicator fx:id="progressIndicator" prefWidth="24" prefHeight="24"/>
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button fx:id="cancelButton" text="Cancel"/>
+        <Button fx:id="addButton" text="Add" styleClass="primary-button" defaultButton="true"/>
+    </HBox>
+</VBox>
