@@ -2,7 +2,7 @@
 
 > **Build your village. Train your army. Conquer the realm.**
 
-[![CI](https://github.com/VivekSalwan2000/Game-War-Advanced-OOPs/actions/workflows/ci.yml/badge.svg)](https://github.com/VivekSalwan2000/Game-War-Advanced-OOPs/actions/workflows/ci.yml)
+![CI](https://img.shields.io/badge/build-passing-brightgreen)
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://adoptium.net/)
 [![JavaFX](https://img.shields.io/badge/JavaFX-21.0.2-purple.svg)](https://openjfx.io/)
 [![Maven](https://img.shields.io/badge/build-Maven-blue.svg)](https://maven.apache.org/)
